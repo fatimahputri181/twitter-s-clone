@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgb(44, 44, 44);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container,
+.header {
+  max-width: 62rem;
+
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+
+.middle {
+  border-left: solid 1px rgb(235, 235, 235);
+  border-right: solid 1px rgb(235, 235, 235);
+}
+
+.container2 {
+  max-width: 31rem;
+  margin-left: 6rem;
+  margin-top: 1.2rem;
+
+  position: fixed;
+}
+
+.container3 {
+  max-width: 31rem;
+  margin-left: 3rem;
+  margin-top: 1.2rem;
+}
+
+.heading-primary {
+  font-weight: 800;
+  color: inherit;
+  font-size: 2.2rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  color: inherit;
+  font-size: 2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+  color: rgb(44, 44, 44);
+  transition: all 0.3s;
+  background-color: none;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(228, 225, 225);
+}
+
+.btn2,
+.btn2:link,
+.btn2:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+  color: rgb(233, 233, 233);
+  transition: all 0.3s;
+  background-color: rgb(29, 29, 29);
+}
+
+.btn2:hover,
+.btn2:active {
+  background-color: rgb(54, 54, 54);
+  color: rgb(247, 247, 247);
+}
+
+.btn3--outline:link,
+.btn3--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn3--outline:hover,
+.btn3--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
